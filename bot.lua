@@ -7,15 +7,15 @@ function get_admin ()
 	if redis:get('botBOT-IDadminset') then
 		return true
 	else
-   		print("\n\27[32m  ·«“„Â ò«—ò—œ ’ÕÌÕ ° ›—«„Ì‰ Ê «„Ê—«  „œÌ—Ì Ì —»«   »·Ì€ ê— <<\n                     ⁄—Ì› ò«—»—Ì »Â ⁄‰Ê«‰ „œÌ— «” \n\27[34m                   «ÌœÌ ŒÊœ —« »Â ⁄‰Ê«‰ „œÌ— Ê«—œ ò‰Ìœ\n\27[32m    ‘„« „Ì  Ê«‰Ìœ «“ —»«  “Ì— ‘‰«”Â ⁄œœÌ ŒÊœ —« »œ”  «Ê—Ìœ\n\27[34m        —»« :       @id_ProBot")
+   		print("\n\27[32m  √°√á√í√£√• Àú√á√ëÀú√ë√è √ï√ç√≠√ç ¬° √ù√ë√á√£√≠√§ √¶ √á√£√¶√ë√á√ä √£√è√≠√ë√≠√ä√≠ √ë√à√á√ä √ä√à√°√≠√õ ¬ê√ë <<\n                    √ä√ö√ë√≠√ù Àú√á√ë√à√ë√≠ √à√• √ö√§√¶√á√§ √£√è√≠√ë √á√ì√ä\n\27[34m                   √á√≠√è√≠ √é√¶√è √ë√á √à√• √ö√§√¶√á√§ √£√è√≠√ë √¶√á√ë√è Àú√§√≠√è\n\27[32m    √î√£√á √£√≠ √ä√¶√á√§√≠√è √á√í √ë√à√á√ä √í√≠√ë √î√§√á√ì√• √ö√è√è√≠ √é√¶√è √ë√á √à√è√ì√ä √á√¶√ë√≠√è\n\27[34m        √ë√à√á√ä:       @id_ProBot")
     		print("\n\27[32m >> Tabchi Bot need a fullaccess user (ADMIN)\n\27[34m Imput Your ID as the ADMIN\n\27[32m You can get your ID of this bot\n\27[34m                 @id_ProBot")
-    		print("\n\27[36m                      : ‘‰«”Â ⁄œœÌ «œ„Ì‰ —« Ê«—œ ò‰Ìœ << \n >> Imput the Admin ID :\n\27[31m                 ")
+    		print("\n\27[36m                      : √î√§√á√ì√• √ö√è√è√≠ √á√è√£√≠√§ √ë√á √¶√á√ë√è Àú√§√≠√è << \n >> Imput the Admin ID :\n\27[31m                 ")
     		admin=io.read()
 		redis:del("botBOT-IDadmin")
     		redis:sadd("botBOT-IDadmin", admin)
 		redis:set('botBOT-IDadminset',true)
   	end
-  	return print("\n\27[36m     ADMIN ID |\27[32m ".. admin .." \27[36m| ‘‰«”Â «œ„Ì‰")
+  	return print("\n\27[36m     ADMIN ID |\27[32m ".. admin .." \27[36m| √î√§√á√ì√• √á√è√£√≠√§")
 end
 function get_bot (i, naji)
 	function bot_info (i, naji)
@@ -33,7 +33,7 @@ function get_bot (i, naji)
 end
 function reload(chat_id,msg_id)
 	loadfile("./bot-BOT-ID.lua")()
-	send(chat_id, msg_id, "<i>»« „Ê›ﬁÌ  «‰Ã«„ ‘œ.</i>")
+	send(chat_id, msg_id, "<i>√à√á √£√¶√ù√û√≠√ä √á√§√å√á√£ √î√è.</i>")
 end
 function is_naji(msg)
     local var = false
@@ -186,63 +186,63 @@ function tdcli_update_callback(data)
 			local matches
 			find_link(text)
 			if is_naji(msg) then
-				if text:match("^(«›“Êœ‰ „œÌ—) (%d+)$") then
+				if text:match("^(√á√ù√í√¶√è√§ √£√è√≠√ë) (%d+)$") then
 					local matches = text:match("%d+")
 					if redis:sismember('botBOT-IDadmin', matches) then
-						return send(msg.chat_id_, msg.id_, "<i>ò«—»— „Ê—œ ‰Ÿ— œ— Õ«· Õ«÷— „œÌ— «” .</i>")
+						return send(msg.chat_id_, msg.id_, "<i>Àú√á√ë√à√ë √£√¶√ë√è √§√ô√ë √è√ë √ç√á√° √ç√á√ñ√ë √£√è√≠√ë √á√ì√ä.</i>")
 					elseif redis:sismember('botBOT-IDmod', msg.sender_user_id_) then
-						return send(msg.chat_id_, msg.id_, "‘„« œ” —”Ì ‰œ«—Ìœ.")
+						return send(msg.chat_id_, msg.id_, "√î√£√á √è√ì√ä√ë√ì√≠ √§√è√á√ë√≠√è.")
 					else
 						redis:sadd('botBOT-IDadmin', matches)
 						redis:sadd('botBOT-IDmod', matches)
-						return send(msg.chat_id_, msg.id_, "<i>„ﬁ«„ ò«—»— »Â „œÌ— «— ﬁ« Ì«› </i>")
+						return send(msg.chat_id_, msg.id_, "<i>√£√û√á√£ Àú√á√ë√à√ë √à√• √£√è√≠√ë √á√ë√ä√û√á √≠√á√ù√ä</i>")
 					end
-				elseif text:match("^(«›“Êœ‰ „œÌ—ò·) (%d+)$") then
+				elseif text:match("^(√á√ù√í√¶√è√§ √£√è√≠√ëÀú√°) (%d+)$") then
 					local matches = text:match("%d+")
 					if redis:sismember('botBOT-IDmod',msg.sender_user_id_) then
-						return send(msg.chat_id_, msg.id_, "‘„« œ” —”Ì ‰œ«—Ìœ.")
+						return send(msg.chat_id_, msg.id_, "√î√£√á √è√ì√ä√ë√ì√≠ √§√è√á√ë√≠√è.")
 					end
 					if redis:sismember('botBOT-IDmod', matches) then
 						redis:srem("botBOT-IDmod",matches)
 						redis:sadd('botBOT-IDadmin'..tostring(matches),msg.sender_user_id_)
-						return send(msg.chat_id_, msg.id_, "„ﬁ«„ ò«—»— »Â „œÌ—Ì  ò· «— ﬁ« Ì«›  .")
+						return send(msg.chat_id_, msg.id_, "√£√û√á√£ Àú√á√ë√à√ë √à√• √£√è√≠√ë√≠√ä Àú√° √á√ë√ä√û√á √≠√á√ù√ä .")
 					elseif redis:sismember('botBOT-IDadmin',matches) then
-						return send(msg.chat_id_, msg.id_, 'œ—Õ«· Õ«÷— „œÌ— Â” ‰œ.')
+						return send(msg.chat_id_, msg.id_, '√è√ë√ç√á√° √ç√á√ñ√ë √£√è√≠√ë √•√ì√ä√§√è.')
 					else
 						redis:sadd('botBOT-IDadmin', matches)
 						redis:sadd('botBOT-IDadmin'..tostring(matches),msg.sender_user_id_)
-						return send(msg.chat_id_, msg.id_, "ò«—»— »Â „ﬁ«„ „œÌ—ò· „‰’Ê» ‘œ.")
+						return send(msg.chat_id_, msg.id_, "Àú√á√ë√à√ë √à√• √£√û√á√£ √£√è√≠√ëÀú√° √£√§√ï√¶√à √î√è.")
 					end
-				elseif text:match("^(Õ–› „œÌ—) (%d+)$") then
+				elseif text:match("^(√ç√ê√ù √£√è√≠√ë) (%d+)$") then
 					local matches = text:match("%d+")
 					if redis:sismember('botBOT-IDmod', msg.sender_user_id_) then
 						if tonumber(matches) == msg.sender_user_id_ then
 								redis:srem('botBOT-IDadmin', msg.sender_user_id_)
 								redis:srem('botBOT-IDmod', msg.sender_user_id_)
-							return send(msg.chat_id_, msg.id_, "‘„« œÌê— „œÌ— ‰Ì” Ìœ.")
+							return send(msg.chat_id_, msg.id_, "√î√£√á √è√≠¬ê√ë √£√è√≠√ë √§√≠√ì√ä√≠√è.")
 						end
-						return send(msg.chat_id_, msg.id_, "‘„« œ” —”Ì ‰œ«—Ìœ.")
+						return send(msg.chat_id_, msg.id_, "√î√£√á √è√ì√ä√ë√ì√≠ √§√è√á√ë√≠√è.")
 					end
 					if redis:sismember('botBOT-IDadmin', matches) then
 						if  redis:sismember('botBOT-IDadmin'..msg.sender_user_id_ ,matches) then
-							return send(msg.chat_id_, msg.id_, "‘„« ‰„Ì  Ê«‰Ìœ „œÌ—Ì òÂ »Â ‘„« „ﬁ«„ œ«œÂ —« ⁄“· ò‰Ìœ.")
+							return send(msg.chat_id_, msg.id_, "√î√£√á √§√£√≠ √ä√¶√á√§√≠√è √£√è√≠√ë√≠ Àú√• √à√• √î√£√á √£√û√á√£ √è√á√è√• √ë√á √ö√í√° Àú√§√≠√è.")
 						end
 						redis:srem('botBOT-IDadmin', matches)
 						redis:srem('botBOT-IDmod', matches)
-						return send(msg.chat_id_, msg.id_, "ò«—»— «“ „ﬁ«„ „œÌ—Ì  Œ·⁄ ‘œ.")
+						return send(msg.chat_id_, msg.id_, "Àú√á√ë√à√ë √á√í √£√û√á√£ √£√è√≠√ë√≠√ä √é√°√ö √î√è.")
 					end
-					return send(msg.chat_id_, msg.id_, "ò«—»— „Ê—œ ‰Ÿ— „œÌ— ‰„Ì »«‘œ.")
+					return send(msg.chat_id_, msg.id_, "Àú√á√ë√à√ë √£√¶√ë√è √§√ô√ë √£√è√≠√ë √§√£√≠ √à√á√î√è.")
 					return send(msg.chat_id_, 0, text)
-				elseif (text:match("^(«—”«· »Â) (.*)$") and msg.reply_to_message_id_ ~= 0) then
-					local matches = text:match("^«—”«· »Â (.*)$")
+				elseif (text:match("^(√á√ë√ì√á√° √à√•) (.*)$") and msg.reply_to_message_id_ ~= 0) then
+					local matches = text:match("^√á√ë√ì√á√° √à√• (.*)$")
 					local naji
-					if matches:match("^(Â„Â)$") then
+					if matches:match("^(√•√£√•)$") then
 						naji = "botBOT-IDall"
-					elseif matches:match("^(Œ’Ê’Ì)") then
+					elseif matches:match("^(√é√ï√¶√ï√≠)") then
 						naji = "botBOT-IDusers"
-					elseif matches:match("^(ê—ÊÂ)$") then
+					elseif matches:match("^(¬ê√ë√¶√•)$") then
 						naji = "botBOT-IDgroups"
-					elseif matches:match("^(”ÊÅ—ê—ÊÂ)$") then
+					elseif matches:match("^(√ì√¶¬Å√ë¬ê√ë√¶√•)$") then
 						naji = "botBOT-IDsupergroups"
 					else
 						return true
@@ -259,6 +259,6 @@ function tdcli_update_callback(data)
 							from_background_ = 1
 						}, dl_cb, nil)
 					end
-					return send(msg.chat_id_, msg.id_, "<i>»« „Ê›ﬁÌ  ›—” «œÂ ‘œ</i>")
+					return send(msg.chat_id_, msg.id_, "<i>√à√á √£√¶√ù√û√≠√ä √ù√ë√ì√ä√á√è√• √î√è</i>")
 	end
 end
