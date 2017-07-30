@@ -1,10 +1,7 @@
 <p align="center"> <img src="http://www.pic98.ir/upload/bniu_untitled-3.png" width="240">
 <h1><p align="center">تبلیغ‌گر
 <h2><p align="center">سرعت 💠 دقت 💠 قدرت
-<div align="center">
-    <a href="https://telegram.me/us2911">
-        <img src="http://upir.ir/951/guest/Untitled-5.png" hspace="10" width="150">
-    </a>
+   </a>
 </div>
 
 <h3><p dir="rtl">تبلیغ‌گر رباتی هوشمند, بسیار ساده و البته حرفه ای جهت امور تبلیغاتی در تلگرام است.<br>
