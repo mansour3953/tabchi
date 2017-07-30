@@ -2,19 +2,13 @@
 <h1><p align="center">تبلیغ‌گر
 <h2><p align="center">سرعت 💠 دقت 💠 قدرت
 <div align="center">
-    <a href="https://telegram.me/ramtintzbot">
+    <a href="https://telegram.me/us2911">
         <img src="http://upir.ir/951/guest/Untitled-5.png" hspace="10" width="150">
-    </a>
-    <a href="https://telegram.me/tabchisell">
-        <img src="http://upir.ir/951/guest/Untitled-7.png" hspace="10" width="150">
-    </a>
-    <a href="https://telegram.me/ramtintz">
-        <img src="http://upir.ir/951/guest/Untitled-6.png" width="150">
     </a>
 </div>
 
 <h3><p dir="rtl">تبلیغ‌گر رباتی هوشمند, بسیار ساده و البته حرفه ای جهت امور تبلیغاتی در تلگرام است.<br>
-نوشته شده توسط <a href="https://github.com/i-Naji/tabchi/tree/persian">ناجی</a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
+نوشته شده توسط <a href="https://github.com/i-Naji/tabchi/tree/persian"> mansour </a> برپایه اخرین نسخه <a href="https://valtman.name/telegram-cli">تلگرام</a>.
 <br>
 <h3 align="right"> <strong> نصب و راه‌اندازی</strong> 🚀
 </h3>
@@ -22,7 +16,7 @@
 <h4 dir="rtl">ابتدا سورس <em>ربات تبلیغ‌گر</em> را کپی کرده و پیش‌زمینه‌ها را نصب کنید.</h4>
 <h6>(موارد زیر را در ترمینال وارد کنید)</h6>
 <pre>
-<span>git clone https://github.com/ramtintz/tabchi.git</span>
+<span>git clone https://github.com/mansour3953/tabchi.git</span>
 <span>cd tabchi</span>
 <span>chmod +x bot</span>
 <span>./bot install</span>
@@ -44,7 +38,7 @@
 <span>./bot 1</span>
 </pre>
 <h5 dir="rtl">توجه داشته باشید برای اولین بار که ربات را راه اندازی می‌کنید،از شما شناسه عددی مدیر ربات (شما و یا هرکس که می خواهید مدیر ربات شود) ، شماره ربات و کد ورود به حساب کاربری خواسته می‌شود.
-<h6 dir="rtl"> شما می توانید با استفاده از ربات <a href="https://telegram.me/id_probot">@ID_ProBot</a> شناسه عددی خود را بدست آورید.</h6>
+<h6 dir="rtl"> شما می توانید با استفاده از ربات <a href="https://telegram.me/id_probot">@userinfobot</a> شناسه عددی خود را بدست آورید.</h6>
 <h6 dir="rtl">از <a href="#help">راهنمای‌تبلیغ‌گر</a> برای آشنا شدن با طرز کار رباتتان استفاده کنید.</h6>
 <br>
 <h3 align="right"><strong>جلوگیری از قطع شدن عملکرد تبلیغ‌گر</strong>🛡
