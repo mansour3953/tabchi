@@ -309,7 +309,5 @@
 <br>
 <h2 dir="rtl">پشتیبانی
 <hr>
-<h4 dir="rtl">پذیرای انتقادات وپیشنهاداتان هستیم ♚ TabChiSell ♚ <a href="https://telegram.me/ramtintz"> @ramtintz </a> <a href="https://telegram.me/ramtintzbot"> @ramtintzbot</a>
-<br>راهنمای استفاده از تبلیغ‌گر بسیار ساده و قابل درک است<br>فیلم آموزشی نصب و اطلاع از آخرین اخبار تبلیغ‌گر در کانال ما 
-<a href="https://telegram.me/tabchisell"> @tabchisell</a>
+پشتیبانی نداریم :/
 </h4>
